@@ -1,0 +1,15 @@
+/*WATERMARK*/
+.vfrc-footer--watermark {
+    display: block; /* Ensures the element is in the layout */
+    text-align: center; /* Centers the text within the footer */
+    font-size: 0; /* Hides original text if any exists, while keeping the element in document flow */
+    width: 100%; /* Ensures the footer spans the full width of its container */
+}
+
+.vfrc-footer--watermark::after {
+    content: 'Powered by Alstrategy';
+    font-size: 10px; /* Sets font size for new content */
+    color: gray; /* Sets a non-intrusive gray color */
+    cursor: default; /* Default cursor to indicate non-clickable text */
+    visibility: visible; /* Ensures it's seen */
+}
